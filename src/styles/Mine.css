@@ -1,0 +1,123 @@
+.mine-wrapper {
+  background-color: #00c853;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+.mine-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.mine-top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.mine-top h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.mine-top p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.mine-balance {
+  background: #f0f4ff;
+  color: #6c49f4;
+  border-radius: 16px;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.balance-info p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.balance-info h2 {
+  margin: 4px 0 0;
+  font-size: 1.6rem;
+}
+
+.recharge-button {
+  background: #00a650;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.mine-summary {
+  background: linear-gradient(to right, #7f5af0, #a64ce2);
+  border-radius: 20px;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+.mine-summary h4 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.mine-summary p {
+  margin: 6px 0 0;
+  font-size: 0.9rem;
+}
+
+.mine-links {
+  background-color: #eef2fc;
+  border-radius: 20px;
+  padding: 12px;
+  color: #5f30b6;
+}
+
+.link-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.link-item:last-child {
+  border-bottom: none;
+}
+
+.exit-button {
+  width: 100%;
+  margin-top: 30px;
+  background-color: #00a843;
+  color: white;
+  padding: 14px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}

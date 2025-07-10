@@ -1,0 +1,157 @@
+.promotion-wrapper {
+  background-color: #00c853;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+.promotion-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Top Stats Box */
+.stats-box {
+  background-color: #e8edff;
+  color: #7a52e5;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.stats-box p {
+  margin: 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+.stats-box h3 {
+  margin-top: 6px;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* Invite Link */
+.invite-box {
+  background-color: #fff4e1;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.invite-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.invite-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.invite-link span {
+  font-size: 0.9rem;
+  overflow-wrap: anywhere;
+}
+
+.invite-link button {
+  background: #007e3e;
+  color: white;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* First Level Block */
+.first-level {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0 16px;
+  color: white;
+}
+
+.medal-icon {
+  font-size: 2rem;
+  color: gold;
+  margin-right: 10px;
+}
+
+.view-more {
+  color: #d1caff;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+/* Rebate Summary Box */
+.rebate-box {
+  background: linear-gradient(to right, #7f5af0, #a64ce2);
+  border-radius: 40px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.rebate-box h4 {
+  font-size: 1.4rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.rebate-box p {
+  font-size: 0.9rem;
+  margin-top: 4px;
+  opacity: 0.9;
+}
+
+.commission-info {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.commission-info strong {
+  color: #000;
+}
+
+.commission-list {
+  margin: 15px 0;
+  padding-left: 18px;
+}
+
+.commission-list li {
+  margin-bottom: 10px;
+  list-style: disc;
+}
+
+.commission-amount {
+  color: #008000;
+  font-weight: bold;
+}
+
+.highlight {
+  margin-top: 15px;
+  font-weight: 500;
+  background: #f0fff0;
+  padding: 10px;
+  border-left: 4px solid #4CAF50;
+  border-radius: 8px;
+}
