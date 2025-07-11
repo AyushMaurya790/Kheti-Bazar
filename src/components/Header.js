@@ -9,7 +9,7 @@ function Header() {
     <header className="kb-header">
       <div className="kb-header-container">
         <img src={logo} alt="Kheti Bazaar Logo" className="kb-logo" />
-        <h1 className="kb-title">Kheti Bazaar</h1>
+        <h1 className="kb-title">KISAN  BAZAAR</h1>
         <nav className="kb-nav">
           <Link to="/" className="kb-link"></Link>
           <Link to="/products" className="kb-link"></Link>

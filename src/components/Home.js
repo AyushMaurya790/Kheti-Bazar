@@ -1,13 +1,14 @@
+// src/components/Home.js
 import React, { useState, useEffect } from 'react';
 import '../styles/Home.css';
-import { FaBell, FaCalendarCheck, FaBullhorn, FaMoneyBillWave, FaStar } from 'react-icons/fa';
+import { FaCalendarCheck, FaMoneyBillWave, FaStar } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
 import BottomNavbar from './BottomNavbar';
-import logo from '../assets/k1.png'; // Adjust the path as necessary
-
+import logo from '../assets/k1.png';
 
 const images = [
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmDc_A0BC7cq2Ax1PBiy_gGOSSIpcZ-ZhC2A&s',
-  'https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/qssqupm678qtxagrmapc',
+  'https://media.istockphoto.com/id/1403500817/photo/the-craggies-in-the-blue-ridge-mountains.jpg?s=612x612&w=0&k=20&c=N-pGA8OClRVDzRfj_9AqANnOaDS3devZWwrQNwZuDSk=',
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRpJrfuVnPprG2Vt-ruPSzltAk9tSb4sKQOg&s',
   'https://s3-ap-south-1.amazonaws.com/soulveda-media-prod/wp-content/uploads/sites/2/2025/01/06165209/hiware-bazar-jal-sanrakshan-aur-sahkari-kheti-se-bana-crorepatiyon-ka-gaon.jpg'
 ];
 
@@ -16,46 +17,50 @@ function Home() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000);
-
+      setCurrentImageIndex((prev) => (prev + 1) % images.length);
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <>
       <div className="home-wrapper">
-
         {/* Hero Image Slider */}
-        <div className="hero-image-box">
+        <div className="hero-section">
           <img
             src={images[currentImageIndex]}
-            alt="Hero"
+            alt="Slide"
             className="hero-image"
           />
-           <img src={logo} alt="Kheti Bazaar Logo" className="kb-logo" />
+          <div className="logo-overlay">
+            <img src={logo} alt="Kheti Bazaar Logo" className="kb-logo" />
+          </div>
         </div>
 
-        {/* Action Buttons */}
+        {/* Quick Actions */}
         <div className="action-buttons">
-          <div className="action-btn">
-            <FaCalendarCheck size={24} />
-            <p>CheckIn</p>
-          </div>
-          <div className="action-btn">
-            <FaBullhorn size={24} />
-            <p>Notice</p>
-          </div>
-          <div className="action-btn">
-            <FaMoneyBillWave size={24} />
-            <p>Recharge</p>
-          </div>
-          <div className="action-btn">
-            <FaStar size={24} />
-            <p>Withdraw</p>
-          </div>
+          <NavLink to="/checkin" className="action-btn">
+            <FaCalendarCheck />
+            <span>Check In</span>
+          </NavLink>
+
+          <NavLink to="/information" className="action-btn">
+            <FaCalendarCheck />
+            <span>Notice</span>
+          </NavLink>
+
+          <NavLink to="/recharge" className="action-btn">
+            <FaCalendarCheck />
+            <span>Recharge</span>
+          </NavLink>
+
+          <NavLink to="/withdrawal" className="action-btn">
+            <FaCalendarCheck />
+            <span>Withdrawal</span>
+          </NavLink>
         </div>
       </div>
+
       <BottomNavbar />
     </>
   );

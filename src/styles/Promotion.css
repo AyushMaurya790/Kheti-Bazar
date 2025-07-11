@@ -1,157 +1,215 @@
+/* src/styles/Promotion.css */
+
+body {
+  background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);
+  font-family: 'Poppins', sans-serif;
+  color: #f8f9fa;
+}
+
 .promotion-wrapper {
-  background-color: #00c853;
-  min-height: 100vh;
   padding: 20px;
-  font-family: 'Segoe UI', sans-serif;
-  color: white;
+  max-width: 900px;
+  margin: auto;
+  animation: fadeInUp 0.7s ease-in-out;
 }
 
 .promotion-title {
+  font-size: 32px;
+  font-weight: 700;
   text-align: center;
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-bottom: 20px;
+  color: #00ffc8;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+  margin-bottom: 30px;
 }
 
-/* Top Stats Box */
+/* 3D-style Stat Cards */
 .stats-box {
-  background-color: #e8edff;
-  color: #7a52e5;
-  border-radius: 20px;
-  padding: 20px;
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
+  justify-content: space-between;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  transform: perspective(800px) rotateX(2deg);
+  margin-bottom: 24px;
 }
 
-.stats-box p {
-  margin: 0;
-  font-weight: 500;
+.stats-box div {
   text-align: center;
 }
 
 .stats-box h3 {
-  margin-top: 6px;
-  font-size: 1.6rem;
-  text-align: center;
+  color: #00ff91;
+  font-size: 24px;
 }
 
-/* Invite Link */
+/* Invite Box */
 .invite-box {
-  background-color: #fff4e1;
-  border-radius: 12px;
-  padding: 16px;
+  background: rgba(255, 255, 255, 0.07);
+  padding: 20px;
+  border-radius: 16px;
   margin-bottom: 24px;
-  color: #333;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  transform: rotateY(1deg);
 }
 
 .invite-label {
   font-weight: 600;
-  margin-bottom: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #ffe600;
 }
 
 .invite-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.invite-link span {
-  font-size: 0.9rem;
-  overflow-wrap: anywhere;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px 14px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 14px;
+  word-break: break-word;
 }
 
 .invite-link button {
-  background: #007e3e;
-  color: white;
+  background: linear-gradient(135deg, #ff6f91, #ff9472);
   border: none;
-  padding: 6px 16px;
-  border-radius: 20px;
-  font-weight: bold;
+  padding: 8px 14px;
+  color: #fff;
+  border-radius: 6px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-/* First Level Block */
+.invite-link button:hover {
+  transform: scale(1.05) rotateZ(3deg);
+  box-shadow: 0 4px 12px rgba(255, 111, 145, 0.4);
+}
+
+/* First Level Box */
 .first-level {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 30px 0 16px;
-  color: white;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 14px 18px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
 }
 
 .medal-icon {
-  font-size: 2rem;
   color: gold;
-  margin-right: 10px;
+  font-size: 22px;
 }
 
 .view-more {
-  color: #d1caff;
-  font-size: 0.95rem;
+  margin-left: auto;
+  color: #1dcaff;
   text-decoration: none;
+  font-weight: 500;
+}
+
+.view-more:hover {
+  text-decoration: underline;
 }
 
 /* Rebate Summary Box */
 .rebate-box {
-  background: linear-gradient(to right, #7f5af0, #a64ce2);
-  border-radius: 40px;
-  padding: 24px;
   display: flex;
-  justify-content: space-around;
-  color: white;
-  margin-top: 10px;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 18px;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+  margin-bottom: 24px;
+  transform: perspective(700px) rotateX(3deg);
+}
+
+.rebate-box div {
   text-align: center;
 }
 
 .rebate-box h4 {
-  font-size: 1.4rem;
-  margin: 0;
-  font-weight: bold;
+  font-size: 20px;
+  color: #00ffd1;
 }
 
-.rebate-box p {
-  font-size: 0.9rem;
-  margin-top: 4px;
-  opacity: 0.9;
-}
-
+/* Commission Info */
 .commission-info {
-  background: #ffffff;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 18px;
   border-radius: 16px;
-  padding: 20px;
-  margin-top: 25px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  color: #eeeeee;
+}
+
+.commission-info p {
   font-size: 15px;
   line-height: 1.6;
-  color: #333;
-}
-
-.commission-info strong {
-  color: #000;
+  margin-bottom: 15px;
 }
 
 .commission-list {
-  margin: 15px 0;
-  padding-left: 18px;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 15px;
 }
 
 .commission-list li {
   margin-bottom: 10px;
-  list-style: disc;
+  background: rgba(255, 255, 255, 0.07);
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .commission-amount {
-  color: #008000;
+  color: #ff6f91;
   font-weight: bold;
 }
 
 .highlight {
-  margin-top: 15px;
-  font-weight: 500;
-  background: #f0fff0;
-  padding: 10px;
-  border-left: 4px solid #4CAF50;
-  border-radius: 8px;
+  background: linear-gradient(90deg, #ffe53b, #ff6f00);
+  color: #000;
+  font-weight: 600;
+  padding: 10px 14px;
+  border-radius: 10px;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .stats-box,
+  .rebate-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .invite-link {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .promotion-title {
+    font-size: 24px;
+  }
 }

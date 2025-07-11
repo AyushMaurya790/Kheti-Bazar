@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Login.css';
 import { useNavigate } from 'react-router-dom';
+import logo from '../assets/k1.png';
 
 export default function Login() {
   const [form, setForm] = useState({ phone: '', password: '' });
@@ -18,7 +19,7 @@ export default function Login() {
   return (
     <div className="auth-container">
       <form className="auth-form" onSubmit={handleSubmit}>
-        <img src="/logo192.png" alt="Logo" className="logo" />
+         <img src={logo} alt="Kheti Bazaar Logo" className="kb-logo" />
         <h2 className="auth-title">Login</h2>
 
         <div className="phone-input">

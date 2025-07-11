@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/Register.css';
+import logo from '../assets/k1.png';
 
 export default function Register() {
   const [form, setForm] = useState({
@@ -41,7 +42,7 @@ export default function Register() {
   return (
     <div className="auth-container">
       <form className="auth-form" onSubmit={handleSubmit}>
-        <img src="/logo192.png" alt="Logo" className="logo" />
+        <img src={logo} alt="Kheti Bazaar Logo" className="kb-logo" />
         <h2 className="auth-title">Create Account</h2>
 
         <input

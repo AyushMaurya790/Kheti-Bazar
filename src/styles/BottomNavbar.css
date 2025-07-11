@@ -1,35 +1,59 @@
+/* BottomNavbar.css */
 .bottom-tab {
   position: fixed;
   bottom: 0;
   left: 0;
-  right: 0;
-  height: 60px;
-  background-color: #fff;
-  border-top: 1px solid #ddd;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.05);
-  z-index: 999;
+  padding: 10px 0;
+  z-index: 1000;
+  border-top: 1px solid #e0e0e0;
 }
 
 .tab-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #666;
-  font-size: 0.8rem;
+  font-size: 12px;
+  font-weight: 500;
+  color: #4b5563;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-.tab-item svg {
-  font-size: 1.2rem;
-  margin-bottom: 2px;
+.tab-item:hover {
+  color: #10b981;
 }
 
-.tab-item.active,
-.tab-item:active,
-.tab-item:focus,
-.tab-item.navlink-active {
-  color: #4CAF50;
+.tab-item.active {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.tab-icon {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.tab-label {
+  font-size: 11px;
+}
+
+.fancy-bottom-nav {
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .tab-item {
+    font-size: 10px;
+  }
+  .tab-icon {
+    font-size: 18px;
+  }
 }
