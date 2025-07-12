@@ -6,7 +6,7 @@ import BottomNavbar from '../components/BottomNavbar';
 
 const Information = () => {
   const [copied, setCopied] = useState(false);
-  const invitationLink = "https://kheti-app.com/invite?ref=123456";
+  const invitationLink = "https://kheti-bazar.vercel.app/";
 
   const handleCopy = () => {
     navigator.clipboard.writeText(invitationLink).then(() => {
